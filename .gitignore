@@ -1,3 +1,4 @@
 .env
-survey_service/__pycache__
+__pycache__
 projects
+

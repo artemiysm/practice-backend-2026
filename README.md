@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#  Смирнов.А.А Сервис Опросов 1ИСП-21
+Смирнов.А.А Сервис Опросов 1ИСП-21
 > **Survey Service** — Сервис опросов
 
 В этом документе описано всё, что было выполнено в рамках первого чекпоинта проекта **Survey Service**.
@@ -240,4 +239,3 @@ flask db current
 - [dbdiagram.io](https://dbdiagram.io) — проектирование ER-диаграмм
 - [Postman](https://www.postman.com) — тестирование API
 - [Docker — Getting Started](https://docs.docker.com/get-started/)
->>>>>>> upstream/main
