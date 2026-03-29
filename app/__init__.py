@@ -1,7 +1,7 @@
 from flask import Flask
 from app.config import Config
-from app.extensions import db, migrate, jwt
-from app.models.user import User #регистрация
+from app.extensions import db, migrate, jwt, bcrypt
+from app.models.user import User 
 from app.models.survey import Survey, Question, Option
 from app.models.answer import Response, Answer
 from app.api.auth import auth_bp
@@ -14,7 +14,9 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     jwt.init_app(app)
+    bcrypt.init_app(app)
     
+    # Регистрация блюпринтов
     app.register_blueprint(auth_bp)
     app.register_blueprint(surveys_bp)
     
